@@ -13,7 +13,7 @@ const getAllUsers = (req, res) => {
 
 const getUserById = (req, res) => {
     const id = req.params.id
-    userControllers.findUserById(id)
+    userControllers.findUserByid(id)
         .then((data) => {
             if(data){
                 res.status(200).json(data)
